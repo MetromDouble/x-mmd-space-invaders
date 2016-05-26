@@ -1,0 +1,83 @@
+// out: ./stylesheet.css, sourcemap: true, compress: true
+/*
+@font-face {
+    font-family: 'pn-bold';
+    src: url('../fonts/proxima_nova_bold_0-webfont.eot');
+    src: url('../fonts/proxima_nova_bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_bold_0-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_bold_0-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_bold_0-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_bold_0-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #fff8ed;
+}
+
+#gamebox {
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 400px;
+  max-height: 520px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(43, 18, 9);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(right, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), -webkit-linear-gradient(#d77d31, #fe8417, #985721);
+  background: -o-linear-gradient(right, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), -o-linear-gradient(#d77d31, #fe8417, #985721);
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#492c13, #522e0e, #6c401b);
+  canvas {
+    width: 100%;
+  }
+}
+.controls {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 14%;
+  padding: 0 7% 4% 7%;
+  box-sizing: border-box;
+  button {
+      position: relative;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      font-weight: bold;
+      color: #522e0e;
+      text-decoration: none;
+      user-select: none;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+
+  #fire {
+    width: 30%;
+  }
+  #lstrafe, #rstrafe {
+    float: right;
+    width: 16%;
+    margin-left: 4%;
+  }
+}
